@@ -1,0 +1,1 @@
+All output of compiler should go here except for exe.
