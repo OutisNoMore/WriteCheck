@@ -17,8 +17,11 @@ bool tester(double input, std::string compare){
   }
 }
 
-int main(){
+int main(int argc, char *argv[]){
   try{
+    if(argc > 1){
+      std::cout << WriteCheck::processCheck(std::stod(argv[1])) << std::endl;
+    }
     int totalTests = 10;
     int numberPassed = 0;
     auto t1 = std::chrono::high_resolution_clock::now();
